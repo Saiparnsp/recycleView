@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">homeWorkCycleView</string>
+    <string name="title" translatable="false">Longest long than longer placeholder</string>
+    <string name="subTile" translatable="false">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+    </string>
+</resources>
