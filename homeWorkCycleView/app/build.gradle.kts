@@ -64,4 +64,5 @@ dependencies {
     testImplementation("junit:junit:${System.getProperty("junitVersion")}")
     androidTestImplementation("androidx.test.ext:junit:${System.getProperty("junitExtVersion")}")
     androidTestImplementation("androidx.test.espresso:espresso-core:${System.getProperty("espressoCoreVersion")}")
+    implementation("com.mikhaellopez:circularimageview:4.3.1")
 }

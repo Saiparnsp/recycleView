@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
     <!-- LinearLayout to place items vertically-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,18 +16,31 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp"
+
+            >
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="100dp"
+                android:layout_height="250dp"
+                android:src="@mipmap/ic_launcher_round"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="6dp"
+                app:civ_shadow_color="@color/white"/>
 
             <TextView
                 android:id="@+id/display_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/kanit"
                 android:text=" name display"
-                android:layout_margin="10dp"
+                android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textColor="@color/black"
-
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
         <ImageView
@@ -34,20 +48,23 @@
             android:layout_width="match_parent"
             android:adjustViewBounds="true"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_round" />
+            android:src="@mipmap/ic_launcher_round"
+            android:paddingHorizontal="10dp"/>
         <!-- LinearLayout to place items horizontally-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/kanit_medium"
                 android:text="The Ghost Radio"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -56,10 +73,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/kanit_light"
                 android:text=" name display"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
         </LinearLayout>
 

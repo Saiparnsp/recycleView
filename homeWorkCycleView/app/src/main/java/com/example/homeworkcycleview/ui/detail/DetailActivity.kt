@@ -21,6 +21,8 @@ class DetailActivity : AppCompatActivity() {
         var subtitle_payload=intent.getStringExtra("details_subTitle")
         var image = intent.getStringExtra("details_image")
         Glide.with(this).load(image).into(detailBinding.imageView);
+        var imageAvatar = intent.getStringExtra("details_avatar")
+        Glide.with(this).load(imageAvatar).into(detailBinding.imageAvatar);
         detailBinding.displayName.text = title_payload
         detailBinding.displaySubtitle.text = subtitle_payload
 

@@ -26,6 +26,7 @@ class ItemAdapter(private val context: Context) : ListAdapter<DataModel, ItemVie
                 putExtra(TITLE_CONTENT,data.title)
                 putExtra(SUBTITLE_CONTENT,data.subtitle)
                 putExtra(IMAGE_CONTENT,data.youtubeImage)
+                putExtra(AVATAR_CONTENT,data.avatarImage)
             }
             context.startActivity(intent)
         }
@@ -34,5 +35,6 @@ class ItemAdapter(private val context: Context) : ListAdapter<DataModel, ItemVie
         val TITLE_CONTENT="details_title"
         val SUBTITLE_CONTENT="details_subTitle"
         val IMAGE_CONTENT="details_image"
+        val AVATAR_CONTENT="details_avatar"
     }
 }

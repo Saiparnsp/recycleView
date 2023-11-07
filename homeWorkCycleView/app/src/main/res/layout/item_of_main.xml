@@ -11,26 +11,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="10dp">
+        android:paddingBottom="10dp"
+        android:paddingHorizontal="10dp">
 
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="match_parent"
             android:layout_height="244dp"
             android:adjustViewBounds="true"
-            android:src="@mipmap/ic_launcher_round" />
+            android:src="@mipmap/ic_launcher_round"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher_round"
+                />
+
+            <TextView
+                android:id="@+id/title_text_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/kanit_medium"
+                android:paddingLeft="5dp"
+                android:text="@string/title"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/title_text_label"
-            style="@style/TextAppearance.Material3.BodyMedium"
+            android:id="@+id/subtitle_text_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title" />
-         <TextView
-        android:id="@+id/subtitle_text_label"
-        style="@style/TextAppearance.Material3.BodySmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/subTile" />
+
+            android:fontFamily="@font/kanit_medium"
+            android:text="@string/subTile"
+            android:textSize="14sp" />
 
 
     </LinearLayout>

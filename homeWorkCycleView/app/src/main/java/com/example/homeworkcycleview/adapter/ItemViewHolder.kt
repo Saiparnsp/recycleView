@@ -15,5 +15,6 @@ class ItemViewHolder (private val context: Context, itemView: View) :
         itemBinding.titleTextLabel.text = data.title
         itemBinding.subtitleTextLabel.text = data.subtitle
         Glide.with(context).load(data.youtubeImage).into(itemBinding.imageView);
+        Glide.with(context).load(data.avatarImage).into(itemBinding.imageAvatar);
     }
 }
